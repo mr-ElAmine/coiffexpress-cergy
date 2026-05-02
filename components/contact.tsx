@@ -1,7 +1,7 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { Phone, MapPin, Clock, Facebook } from "lucide-react";
+import { Phone, MapPin, Clock, Facebook, Navigation } from "lucide-react";
 
 const MapboxMap = dynamic(
   () => import("./mapbox-map").then((m) => ({ default: m.MapboxMap })),
@@ -108,6 +108,26 @@ export function Contact() {
                 </h3>
                 <p className="text-neutral/40 text-sm">
                   Photos, actualit&eacute;s et avis clients
+                </p>
+              </div>
+            </a>
+
+            {/* Itinéraire */}
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=49.0386,2.0758"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-secondary text-secondary-content p-6 hover:bg-secondary/90 transition-all group"
+            >
+              <div className="w-12 h-12 flex items-center justify-center bg-neutral text-neutral-content shrink-0">
+                <Navigation className="w-5 h-5" />
+              </div>
+              <div>
+                <h3 className="font-bold group-hover:underline">
+                  Itin&eacute;raire
+                </h3>
+                <p className="text-secondary-content/70 text-sm">
+                  Ouvrir dans Google Maps
                 </p>
               </div>
             </a>

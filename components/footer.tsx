@@ -1,4 +1,4 @@
-import { Phone, MapPin, Navigation } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -69,20 +69,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Itinéraire button */}
-        <div className="mt-10 flex justify-center">
-          <a
-            href="https://www.google.com/maps/dir/?api=1&destination=49.0386,2.0758"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center gap-3 bg-secondary text-secondary-content px-8 py-4 text-base font-bold uppercase tracking-wider hover:bg-secondary/90 transition-all"
-          >
-            <Navigation className="w-5 h-5" />
-            Itin&eacute;raire
-          </a>
-        </div>
-
-        <div className="mt-10 pt-6 border-t border-neutral-content/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-content/25 uppercase tracking-wider">
+        <div className="mt-12 pt-6 border-t border-neutral-content/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-neutral-content/25 uppercase tracking-wider">
           <p>&copy; {new Date().getFullYear()} Coiff&apos;express Cergy</p>
           <p>Barbier &amp; Coiffure &bull; Cergy-Saint-Christophe</p>
         </div>
