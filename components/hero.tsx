@@ -54,7 +54,7 @@ export function Hero() {
             </div>
             <div className="flex items-center gap-2">
               <Clock className="w-4 h-4 text-secondary" />
-              <span>Lun–Sam &bull; 9h–19h</span>
+              <span>Ouvert 7/7 &bull; 10h–19h30</span>
             </div>
           </div>
         </div>

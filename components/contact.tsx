@@ -79,16 +79,13 @@ export function Contact() {
                 <table className="text-sm">
                   <tbody>
                     <tr>
-                      <td className="pr-6 py-1 text-neutral/50">Lundi – Vendredi</td>
-                      <td className="font-bold text-neutral">9h – 19h</td>
+                      <td className="pr-6 py-1 text-neutral/50">Lundi – Dimanche</td>
+                      <td className="font-bold text-neutral">10h – 19h30</td>
                     </tr>
                     <tr>
-                      <td className="pr-6 py-1 text-neutral/50">Samedi</td>
-                      <td className="font-bold text-neutral">9h – 18h</td>
-                    </tr>
-                    <tr>
-                      <td className="pr-6 py-1 text-neutral/50">Dimanche</td>
-                      <td className="text-neutral/30">Ferm&eacute;</td>
+                      <td colSpan={2} className="pt-2 text-secondary font-bold text-xs uppercase tracking-wider">
+                        Sans rendez-vous
+                      </td>
                     </tr>
                   </tbody>
                 </table>

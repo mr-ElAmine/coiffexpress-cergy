@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero";
 import { Services } from "@/components/services";
 import { About } from "@/components/about";
 import { Gallery } from "@/components/gallery";
+import { Hiring } from "@/components/hiring";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
@@ -34,26 +35,20 @@ export default function Home() {
             },
             url: "https://www.facebook.com/p/Coiffexpress-cergy-100093586268343/",
             priceRange: "€",
-            openingHoursSpecification: [
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: [
-                  "Monday",
-                  "Tuesday",
-                  "Wednesday",
-                  "Thursday",
-                  "Friday",
-                ],
-                opens: "09:00",
-                closes: "19:00",
-              },
-              {
-                "@type": "OpeningHoursSpecification",
-                dayOfWeek: "Saturday",
-                opens: "09:00",
-                closes: "18:00",
-              },
-            ],
+            openingHoursSpecification: {
+              "@type": "OpeningHoursSpecification",
+              dayOfWeek: [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday",
+              ],
+              opens: "10:00",
+              closes: "19:30",
+            },
           }),
         }}
       />
@@ -63,6 +58,7 @@ export default function Home() {
         <Services />
         <About />
         <Gallery />
+        <Hiring />
         <Contact />
       </main>
       <Footer />

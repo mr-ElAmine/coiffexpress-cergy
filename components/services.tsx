@@ -3,31 +3,31 @@ import { Scissors, Sparkles, Flame, Wind } from "lucide-react";
 const services = [
   {
     icon: Scissors,
-    title: "Coupe homme",
-    description: "Coupe tendance ou classique. Un style adapté à votre personnalité.",
-    price: "à partir de 10€",
+    title: "Coupe enfant",
+    description: "Coupe pour les moins de 10 ans. Un style adapté aux petits.",
+    price: "10€",
   },
   {
     icon: Sparkles,
-    title: "Shampoing + Coupe",
+    title: "Coupe adulte",
     description:
-      "Shampoing professionnel suivi d'une coupe soignée. Notre formule express.",
+      "Coupe tendance ou classique. Un style adapté à votre personnalité.",
     price: "12€",
     highlight: true,
   },
   {
     icon: Flame,
-    title: "Barbe & Rasage",
+    title: "Taille de barbe",
     description:
-      "Taille de barbe, rasage traditionnel à l'ancienne. Un résultat net et précis.",
-    price: "à partir de 8€",
+      "Taille et entretien de barbe. Un résultat net et précis.",
+    price: "10€",
   },
   {
     icon: Wind,
-    title: "Coiffure femme",
+    title: "Forfait coupe + barbe",
     description:
-      "Brushing, mise en plis et coloration. Service complet pour toute la famille.",
-    price: "Sur devis",
+      "La formule complète : coupe + taille de barbe au meilleur tarif.",
+    price: "18€",
   },
 ];
 
